@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tented Lodge | Reservations</title>
+    <meta name="description" content="contact us page for tented lodge">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head> 
+<body>
+    <header>
+        <nav>
+            <input id="navbar-btn" type="checkbox">
+            <section class="logo" aria-label="logo">
+              <img src="./Images/logo.png" alt="tented lodge logo">
+            </section>
+            
+        </nav>
+        <section class="container" aria-label="container">
+          <h3 class="nav-animation">Reservations</h3>
+            <img src="./Images/dining-gallery.jpg" alt="Beneath the canvas of a fiery sunset on a tranquil beach, a couple indulges in a romantic dining experience.">
+        </section>
+    </header>
+    <article class="page" aria-label="Main Content">
+        <section class="contactUs" aria-label="contact us section">
+            <section class="cu-container" aria-label="Contact Us Container">
+                <!-- Form -->
+                <section class="write form-1" aria-label="reservations form">
+                    <h3>Reserve your table in the paradise today!</h3> <br> <br>
+                    <form method="get" id="room-reservations" aria-label="reservations">
+                        <section class="formBox" aria-label="box containing the form">
+                            <section class="row50" aria-label="form section one">
+                                <section class="inputBox" aria-label="details input fields">
+                                    <label for="f-name">First Name</label>
+                                    <input type="text" placeholder="First Name" id="f-name" autocomplete="name" required>
+                                </section>
+                                <section class="inputBox" aria-label="details input fields">
+                                    <label for="l-name">L ast Name</label>
+                                    <input type="text" placeholder="Last Name" id="l-name" autocomplete="family-name" required>
+                                </section>
+                            </section>
+                            <section class="row50" aria-label="form section one">
+                                <section class="inputBox" aria-label="idetails input fields">
+                                    <label for="email">Email</label>
+                                    <input type="email" placeholder="johndoe@email.com" id="email" autocomplete="email" required >
+                                </section>
+                                <section class="inputBox" aria-label="details input fields">
+                                    <label for="t-number">Contact Number</label>
+                                    <input type="text" placeholder="+00 --- --- ----" minlength="11" maxlength="13" id="t-number" autocomplete="tel" required>
+                                </section>
+                            </section>
+                            <h3>
+                              Room Reservations
+                            </h3>
+                            <section class="row100" aria-label="form section two">
+                              <section class="inputBox" aria-label="details input fields">
+                                <label for="branch-1">Branch</label>
+                                  <select name="branch" id="branch-1"  required>
+                                      <option value="">Select a branch</option>
+                                      <option value="Tented Lodge, Yala">Tented Lodge, Yala</option>
+                                      <option value="Ahu Bay, Ahungalla">Ahu Bay, Ahungalla</option>
+                                      <option value="Cape Weligama, Weligama">Cape Weligama, Weligama</option>
+                                  </select>
+                              </section>
+                            </section>
+                            <section class="row50" aria-label="form section one">    
+                              <section class="inputBox" aria-label="details input fields">
+                                  <label for="adults">Adults</label>
+                                  <input type="number" placeholder="1" min="0" value="0" id = "adults" name="Adults"  required> 
+                              </section>
+                              <section class="inputBox" aria-label="details input fields">
+                                  <label for="kids">Kids(over 5 years)</label>
+                                  <input type="number" id="kids" placeholder="1" min="0" value="0" name="Kids">
+                              </section>
+                            </section>
+                            <section class="row50" aria-label="form section one">    
+                              <section class="inputBox" aria-label="details input fields">
+                                  <label for="a-date">Arrival</label>
+                                  <input type="date" name="a-date" id="a-date">
+                              </section>
+                              <section class="inputBox" aria-label="details input fields">
+                                  <label for="d-date">Depature</label>
+                                  <input type="date" name="d-date" id="d-date"  >
+                              </section>
+                              </section>
+                              <section class="row50" aria-label="form section one">    
+                                <section class="inputBox" aria-label="details input fields">
+                                    <label for="s-room">Single Bedrooms</label>
+                                   <input type="number" min="0" placeholder="Enter the number of rooms" id="s-room" value="0">
+                                </section>
+                                <section class="inputBox" aria-label="details input fields">
+                                    <label for="d-room">Double Bedrooms</label>
+                                    
+                                   <input type="number" min="0" placeholder="Enter the number of rooms" id="d-room" value="0">
+                                </section>
+                                <section class="inputBox" aria-label="details input fields">
+                                    <label for="t-room">Triple Bedrooms</label>
+                                    
+                                   <input type="number" min="0" placeholder="Enter the number of rooms" id="t-room" value="0">
+                                </section>
+                              </section>
+                        </section>
+                      <br> <br>
+                        <h3>Extra requirements</h3> <br>
+                    <section class="row100"  aria-label="form section two">
+                        <section class="data-box" aria-label="extra requirement table box">
+                            <table class='custom-table' aria-label="extra requirement table">
+                                <tr class='custom-row custom-row-head'>
+                                  <th class="t-bl">
+                                  </th>
+                                  <th class="t-bl">Extra Requirement</th>
+                                  <th class="desc t-bl">Description</th>
+                                  <th class="t-bl">Cost(per unit)</th>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label for="g-view" class='custom-label'>
+                                      <input type='radio' class='custom-input' id="g-view" name="requirement-1" value="Garden View">
+                                    </label>
+                                  </td>
+                                  <td>Garden View</td>
+                                  <td class="desc">Escape to a haven of tranquility in our Garden View Suite</td>
+                                  <td>$0.00</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label for="p-view" class='custom-label'>
+                                      <input type='radio' class='custom-input' id="p-view" name="requirement-1" value="Pool View">
+                                    </label>
+                                  </td>
+                                  <td>Pool View</td>
+                                  <td class="desc">Our exquisite poolside retreat</td>
+                                  <td>$0.00</td>
+                                </tr>
+                                <tr class='custom-row'>
+                                  <td>
+                                    <label for="wifi" class='custom-label'>
+                                      <input type='checkbox'  class='custom-input' id="wifi" name="requirement" value="WiFi">
+                                    </label>
+                                  </td>
+                                  <td>Wi-Fi</td>
+                                  <td class="desc">Complimentary Wi-Fi Access</td>
+                                  <td>$0.00</td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label for="m-bar" class='custom-label'>
+                                      <input type='checkbox' class='custom-input' id="m-bar" name="requirement" value="Mini Bar">
+                                     
+                                    </label>
+                                  </td>
+                                  <td>
+                                    Complementary Mini Bar
+                                  </td>
+                                  <td class="desc">
+                                    Experience a tastefully curated mini-bar for moments of refined indulgence
+                                  </td>
+                                  <td>
+                                    $0.00
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td>
+                                    <label for="con" class='custom-label'>
+                                      <input type='checkbox' class='custom-input' id="con"  name="requirement" value="Concierge">
+                                    </label>
+                                  </td>
+                                  <td>
+                                    A Personal Concierge
+                                  </td>
+                                  <td class="desc">
+                                    A dedicated conceirge for personal assistance
+                                  </td>
+                                  <td>
+                                    $0.00
+                                  </td>
+                                </tr>
+                                <tr class="custom-row">
+                                    <td>
+                                        <label class='custom-label'>
+                                          
+                                          
+                                        </label>
+                                      </td>
+                                      <td>
+                                        Extra Bedding
+                                      </td>
+                                      <td class="desc">
+                                        Extra bedding if necessary($8,000.00 per person)
+                                      </td>
+                                      <td>
+                                        <select name="ex-bed" id="ex-bed">
+                                          <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                        </select>
+                                      </td>
+                                </tr>
+                              </table>
+                        </section>
+                    </section>
+                    <section class="formBox"  aria-label="promo code box">
+                      <section class="row100"  aria-label="promo field row">
+                        <section class="inputBox" aria-label="promo code input field">
+                          <label for="promo">Promo Code</label>
+                          <input type="text" placeholder="Promo Code" id="promo">
+                      </section>
+                      </section>
+                    </section>
+                    <br> <br>
+                    <h3>Book Adventures</h3> <br> 
+                    <section class="formBox"  aria-label="branch box">
+                      <section class="row100"  aria-label="branch row">
+                        <section class="inputBox" aria-label="branch selection box">
+                          <label for="branch-2">Branch</label>
+                            <select name="branch" id="branch-2" required >
+                                <option value="">Select a branch</option>
+                                <option value="Tented Lodge, Yala">Tented Lodge, Yala</option>
+                                <option value="Ahu Bay, Ahungalla">Ahu Bay, Ahungalla</option>
+                                <option value="Cape Weligama, Weligama">Cape Weligama, Weligama</option>
+                            </select>
+                        </section>
+                      </section>
+                      <section class="row100"  aria-label="adventure type row">
+                        <section class="inputBox" aria-label="adventure selecetion box">
+                          <label for="adventure">Adventure</label>
+                            <select name="adventure" id="adventure"  required>
+                                <option value="">Select an adventure</option>
+                                <option value="Diving">Diving</option>
+                                <option value="Cave Exploring">Cave exploring</option>
+                                <option value="Safari">Safari</option>
+                            </select>
+                        </section>
+                      </section>
+                      <section class="row50" aria-label="adv participant row">    
+                        <section class="inputBox" aria-label="adults input field">
+                            <label for="f-adults">Foreign Adults</label>
+                            <input type="number" placeholder="1" min="0" value="0" id="f-adults" name="Adults"> 
+                        </section>
+                        <section class="inputBox" aria-label="kids input field">
+                            <label for="f-kids">Foreign Kids(over 5 years)</label>
+                            <input type="number" id="f-kids" placeholder="1" min="0" value="0">
+                        </section>
+                      </section>
+                      <section class="row50" aria-label="adults row">    
+                        <section class="inputBox" aria-label="adult input fields">
+                            <label for="l-adults">Local Adults</label>
+                            <input type="number" id="l-adults" placeholder="1" min="0" value="0">
+                        </section>
+                        <section class="inputBox" aria-label="kids input fields">
+                            <label for="l-kids">Local Kids(over 5 years)</label>
+                            <input type="number" id="l-kids" placeholder="1" min="0" value="0">
+                        </section>
+                        </section>
+                        <section class="row50" aria-label="duration and guide box">    
+                          <section class="inputBox" aria-label="duration input fields">
+                              <label for="duration">No. of Hours(charged per hour)</label>
+                             <input type="number" min="0" placeholder="1" value="1" id="duration">
+                          </section>
+                          <section class="inputBox" aria-label="guide input fields">
+                            <label for="guide">Guide Requirement</label>
+                            <select name="Guide" id="guide">
+                              <option value="No guides are required">No guide required</option>
+                              <option value="Guide required">Guide needed</option>
+                            </select>
+                          </section>
+                        </section>
+                  </section>
+                    <br>
+                    <section class="row100"  aria-label="buttons box">
+                      <section class="inputBox" aria-label="reserve rooms button">
+                        <button class="reserve" type="submit" id="reserve">
+                          Reserve Rooms
+                        </button>
+                      </section>
+                      <section class="inputBox"  aria-label="reserve adventures button">
+                        <button class="reserve-adv" type="submit" id="reserve-adv">
+                          Reserve Adventures
+                        </button>
+                      </section>
+                      <section class="inputBox"  aria-label="add to favourites button">
+                        <button class="add-fav" type="submit" id="add-fav" title="Add to favourites">
+                          ♡
+                        </button>
+                      </section>
+                      <section class="inputBox"  aria-label="check loyalty button">
+                        <button class="loyalty" type="button" id="loyalty">
+                          Check Loyalty
+                        </button>
+                      </section>
+                    </section>
+                    <p class="loyaltyOut" id="loyaltyOut">
+
+                    </p>
+                    </form>
+                </section>
+            </section>
+        </section>
+    </article>
+    <table class="table-2" aria-label="output table">
+      <tr>
+        <th>Personal Details Summary</th>
+        <th></th>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td id="name-cell">
+         
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Email
+        </td>
+        <td id="email-cell">
+          
+        </td>
+      </tr>
+      <tr>
+        <td>Contact Number</td>
+        <td id="contact-cell">
+        </td>
+      </tr>
+      <tr>
+        <th>Booking Summary</th>
+        <th>
+          <p>
+
+          </p>
+        </th>
+      </tr>
+      <tr>
+        <td>Branch</td>
+        <td id="branch-cell-1">
+          
+        </td>
+      </tr>
+      <tr>
+        <td>No. of Adults</td>
+        <td id="adult-cell-1">
+        </td>
+      </tr>
+      <tr>
+        <td>No. of kids</td>
+        <td id="kid-cell-1">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Arrival Date
+        </td>
+        <td id="arrival-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Depature Date</td>
+        <td id="depature-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Duration of the stay</td>
+        <td id="duration-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Single Rooms</td>
+        <td id="single-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Double Rooms</td>
+        <td id="double-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Triple Rooms</td>
+        <td id="triple-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Extra Requrements </td>
+        <td id="extra-requirements-cell">
+        </td>
+      </tr>
+      <tr>
+        <td>Promo</td>
+        <td id="promo-cell"></td>
+      </tr>
+      <tr>
+        <td class="total">Total</td>
+        <td class="total" id="total-1"></td>
+      </tr>
+      <tr>
+        <th>
+          Adventure Summary
+        </th>
+        <th>
+
+        </th>
+      </tr>
+      <tr>
+        <td>Branch</td>
+        <td id="branch-cell-2"></td>
+      </tr>
+      <tr>
+        <td>Adventure</td>
+        <td id="adv-cell"></td>
+      </tr>
+      <tr>
+        <td>No. of participants</td>
+        <td id="participant-cell"></td>
+      </tr>
+      <tr>
+        <td>
+          Duration
+        </td>
+        <td id="adv-duration-cell">
+
+        </td>
+      </tr>
+      <tr>
+        <td>Guide</td>
+        <td id="guide-cell"></td>
+      </tr>
+      <tr>
+        <td class="total">Total</td>
+        <td class="total" id="total-2">
+
+        </td>
+      </tr>
+      <tr>
+        <td class="Ototal">Overall Total</td>
+        <td class="Ototal" id="overall"></td>
+      </tr>
+    </table>
+    <br>
+    <section class="empty" id="empty" aria-label="exmpty section filler"></section>
+    <section class="table-wrapper" id="table-wrapper" aria-label="output paragraph">
+      <table class="fl-table">
+          <thead>
+          <tr>
+              <th>Overall Booking</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+              <td id="overall-booking">
+                
+              </td>
+          </tr>
+          <tr>
+            <th id="overall-total">
+
+            </th>
+          </tr>
+          <tbody>
+      </table>
+    </section>  
+    <section class="row100"  aria-label="retun button box">
+      <section class="inputBox"  aria-label="return button">
+        <button class="return" type="button" id="return">
+          ↻
+        </button>
+    </section>
+    </section>
+    <footer>
+      <hr>
+      <div class="resorts footerSec">
+        <h1>Our Resorts</h1>
+          <p>
+            <a href="https://www.resplendentceylon.com/capeweligama/" target="_blank">Cape Weligama</a>
+          </p>
+          <p>
+            <a href="https://www.resplendentceylon.com/teatrails/" target="_blank">Ceylon Tea Trails</a>
+          </p>
+          <p>
+            <a href="https://www.resplendentceylon.com/our-resorts/ahu-bay-ahungalla/" target="_blank">Ahu Bay</a>
+          </p>
+      </div>
+      <hr>
+      <div class="links footerSec paraSec">
+        <h1>Key Links</h1>
+        <p><a href="#">Reservations</a> </p>
+        <p><a href="#">Contact Us</a></p>
+        <p><a href="#">Gallery</a></p>
+        <p><a href="#">Experiences</a></p>
+      </div>
+      <hr>
+      <div class="contacts footerSec paraSec">  
+        <h1>Contact Us</h1>
+        <p> +94 11 7745730<br>
+          +94 11 7745740<br><br>
+          reservations@resplendentceylon.com <br> <br>
+          Resprendent Ceylon Ltd<br>46/38, Nawam Mawatha<br>Colombo 02, Sri Lanka</p>
+      </div>
+      <hr>
+    </footer>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
